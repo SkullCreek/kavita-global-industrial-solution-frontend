@@ -1,26 +1,26 @@
 const data = [
   {
-    title: "Feeding Section Parts",
+    title: "Packaging & Corrugation Machinery",
     id: 1,
     img: "/images/categories/categories-01.png",
   },
   {
-    title: "Printing Unit Parts",
+    title: "Sealing & Fluid Handling",
     id: 2,
     img: "/images/categories/categories-02.png",
   },
   {
-    title: "Slotting & Creasing",
+    title: "Electrical & Power Systems",
     id: 3,
     img: "/images/categories/categories-03.png",
   },
   {
-    title: "Die Cutting Section",
+    title: "Mechanical Seals & Rotary Unions",
     id: 4,
     img: "/images/categories/categories-04.png",
   },
   {
-    title: "Stacker Section",
+    title: "Switchgear & Distribution",
     id: 5,
     img: "/images/categories/categories-05.png",
   },

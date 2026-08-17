@@ -29,16 +29,16 @@ const Hero = () => {
                 <div className="flex items-center gap-14">
                   <div>
                     <h2 className="max-w-[170px] font-semibold text-dark text-xl mb-20">
-                      <a href="/shop-without-sidebar"> Printing Unit Parts </a>
+                      <a href="/shop-without-sidebar?category=Sealing+%26+Fluid+Handling"> Sealing & Fluid Handling </a>
                     </h2>
 
                     <div>
                       <p className="font-medium text-dark-4 text-custom-sm mb-1.5">
-                        genuine spares
+                        Mechanical Seals
                       </p>
                       <span className="flex items-center gap-3">
                         <span className="font-medium text-custom-1 text-blue">
-                          Anilox Rollers, Cylinders & more
+                          Rotary Joints, Pumps & Spares
                         </span>
                       </span>
                     </div>
@@ -47,7 +47,7 @@ const Hero = () => {
                   <div>
                     <Image
                       src="/images/hero/hero-02.png"
-                      alt="printing unit parts"
+                      alt="sealing and fluid handling"
                       width={123}
                       height={161}
                     />
@@ -58,16 +58,16 @@ const Hero = () => {
                 <div className="flex items-center gap-14">
                   <div>
                     <h2 className="max-w-[170px] font-semibold text-dark text-xl mb-20">
-                      <a href="/shop-without-sidebar"> Feeding Section Parts </a>
+                      <a href="/shop-without-sidebar?category=Electrical+%26+Power+Systems"> Electrical & Power Systems </a>
                     </h2>
 
                     <div>
                       <p className="font-medium text-dark-4 text-custom-sm mb-1.5">
-                        genuine spares
+                        Switchgear & Distribution
                       </p>
                       <span className="flex items-center gap-3">
                         <span className="font-medium text-custom-1 text-blue">
-                          Feeders, Rollers & Bearings
+                          LED Lighting, Cables & UPS
                         </span>
                       </span>
                     </div>

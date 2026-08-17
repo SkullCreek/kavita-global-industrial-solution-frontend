@@ -1,7 +1,5 @@
 import { Product } from "@/types/product";
 
-// Reuses the template's existing placeholder product images (8 sets, cycled).
-// Swap these image paths with real part photos whenever you're ready.
 const imageSet = (n: number) => ({
   thumbnails: [
     `/images/products/product-${n}-sm-1.png`,
@@ -16,378 +14,208 @@ const imageSet = (n: number) => ({
 const img = (id: number) => imageSet(((id - 1) % 8) + 1);
 
 const shopData: Product[] = [
-  // --- Feeding Section Parts ---
+  // DIVISION 01 - PACKAGING & CORRUGATION MACHINERY
   {
     id: 1,
-    title: "Lead Edge Feeder / Chain Feeder",
-    category: "Feeding Section",
-    description:
-      "Precision lead-edge feeder unit for smooth, jam-free entry of corrugated sheets into the printing line.",
-    reviews: 0,
-    price: 0,
-    discountedPrice: 0,
+    title: "Corrugated Cardboard Production Line",
+    category: "Packaging & Corrugation Machinery",
+    subCategory: "Turnkey Line",
+    description: "A complete production line for corrugated cardboard, supplied as a matched set from reel stand to stacker. The 3-ply, 5-ply, 7-ply and multi-function configurations are built from the same core modules.",
+    specifications: [
+      { label: "Line speed", value: "100 – 220 m/min" },
+      { label: "Paper width", value: "1400 – 2200 mm" },
+      { label: "Flute profiles", value: "A, B, C, E (UV type)" },
+      { label: "Ply configuration", value: "3 / 5 / 7 ply and multi-function" },
+      { label: "Heating", value: "Steam / electric / thermic oil" }
+    ],
     imgs: img(1),
   },
   {
     id: 2,
-    title: "Feeder Rubber Roller",
-    category: "Feeding Section",
-    description:
-      "High-grip rubber roller that ensures consistent sheet contact and reliable feed alignment.",
-    reviews: 0,
-    price: 0,
-    discountedPrice: 0,
+    title: "Electric Mill Roll Stand",
+    category: "Packaging & Corrugation Machinery",
+    subCategory: "Reel Handling",
+    description: "Cast-iron reel stands for single-side loading, motorised build. Carry pneumatic or multi-point braking for stable web tension into the pre-heater.",
+    specifications: [
+      { label: "Max. reel diameter", value: "Φ 1500 mm" },
+      { label: "One-side loading", value: "Max. 1500 kg" },
+      { label: "Arm control motor (clamp)", value: "0.37 kW" }
+    ],
     imgs: img(2),
   },
   {
     id: 3,
-    title: "Feeding Wheels",
-    category: "Feeding Section",
-    description:
-      "Durable feeding wheels engineered for accurate sheet spacing and steady in-feed speed.",
-    reviews: 0,
-    price: 0,
-    discountedPrice: 0,
+    title: "Fingerless Type Single Facer",
+    category: "Packaging & Corrugation Machinery",
+    subCategory: "Corrugation",
+    description: "Vacuum-assisted fingerless corrugation. Removes the finger marks that limit print quality on the finished board and allows higher sustained speeds.",
+    specifications: [
+      { label: "Working width", value: "1400 – 2300 mm" },
+      { label: "Design speed", value: "100 - 200 m/min" },
+      { label: "Heating type", value: "Steam / electric / oil" }
+    ],
     imgs: img(3),
   },
   {
     id: 4,
-    title: "Vacuum Transfer Belt",
-    category: "Feeding Section",
-    description:
-      "Vacuum-assisted transfer belt that holds sheets firmly while moving them into the print unit.",
-    reviews: 0,
-    price: 0,
-    discountedPrice: 0,
+    title: "Automatic High Speed Printing, Slotting & Die-Cutting Machine",
+    category: "Packaging & Corrugation Machinery",
+    subCategory: "Converting",
+    description: "Lead-edge feeding, flexo printing, slotting and rotary die-cutting in one pass, with colour groups configured to requirement.",
+    specifications: [
+      { label: "Production speed", value: "120 - 200 pcs/min" },
+      { label: "Max. paper size", value: "Up to 1400 × 2600 mm" },
+      { label: "Control mode", value: "PLC / touch screen / button" }
+    ],
     imgs: img(4),
   },
   {
     id: 5,
-    title: "Sheet Guide Plate",
-    category: "Feeding Section",
-    description:
-      "Precision guide plate that keeps sheets aligned and prevents skewing during feed.",
-    reviews: 0,
-    price: 0,
-    discountedPrice: 0,
+    title: "Automatic Folder Gluer Machine",
+    category: "Packaging & Corrugation Machinery",
+    subCategory: "Converting",
+    description: "Automatic folder gluer for regular slotted cartons, with PLC and touch screen control.",
+    specifications: [
+      { label: "Max. cardboard", value: "900 × 2200 mm / 1200 × 2500 mm" },
+      { label: "Paperboard thickness", value: "3 or 5 layer" }
+    ],
     imgs: img(5),
   },
   {
     id: 6,
-    title: "Feeder Motor",
-    category: "Feeding Section",
-    description:
-      "Heavy-duty feeder drive motor built for continuous-duty industrial operation.",
-    reviews: 0,
-    price: 0,
-    discountedPrice: 0,
+    title: "Corrugated Machinery Spares",
+    category: "Packaging & Corrugation Machinery",
+    subCategory: "Spare Parts",
+    description: "Fast-moving wear parts and consumables for corrugation and carton-converting machinery, held for short-lead replacement.",
+    specifications: [
+      { label: "Available Spares", value: "Brake Bands, Corrugated Rollers, Gear Pumps, Slitting Discs, Rotary Joints, etc." }
+    ],
     imgs: img(6),
   },
+
+  // DIVISION 02 - SEALING & FLUID HANDLING
   {
     id: 7,
-    title: "Feeder Bearings",
-    category: "Feeding Section",
-    description:
-      "Genuine feeder shaft bearings for smooth rotation and reduced downtime.",
-    reviews: 0,
-    price: 0,
-    discountedPrice: 0,
+    title: "Rubber Bellow Seal",
+    category: "Sealing & Fluid Handling",
+    subCategory: "Mechanical Seals",
+    description: "Single mechanical seal for pumps. Face and elastomer combinations are selected to the medium, pressure and temperature of the duty.",
+    specifications: [
+      { label: "Face Materials", value: "Silicon Carbide, Carbon, Tungsten Carbide, Ceramic" },
+      { label: "Metal Parts", value: "AISI SS 316, AISI SS 304" },
+      { label: "Applications", value: "Water pumps, submersible pumps, sewage pumps" },
+      { label: "Shaft diameter", value: "10 – 100 mm" }
+    ],
     imgs: img(7),
   },
-
-  // --- Printing Unit Parts ---
   {
     id: 8,
-    title: "Anilox Roller",
-    category: "Printing Unit",
-    description:
-      "Precision-engraved anilox roller for consistent, high-quality ink transfer across the web.",
-    reviews: 0,
-    price: 0,
-    discountedPrice: 0,
+    title: "Dual Cartridge Seal",
+    category: "Sealing & Fluid Handling",
+    subCategory: "Mechanical Seals",
+    description: "Dual cartridge mechanical seals for pumps, agitators and rotating equipment across water, chemical, hydrocarbon and pharmaceutical service.",
+    specifications: [
+      { label: "Face Materials", value: "Carbon, Silicon Carbide, Tungsten Carbide, Lecrolloy" },
+      { label: "Applications", value: "Slurry pumps, pulp and paper, sludge and syrup pumps, chemical, petrochemical and refinery" },
+      { label: "Shaft diameter", value: "18 – 100 mm" }
+    ],
     imgs: img(8),
   },
   {
     id: 9,
-    title: "Printing Plate Cylinder",
-    category: "Printing Unit",
-    description:
-      "Accurately balanced plate cylinder for sharp, repeatable print registration.",
-    reviews: 0,
-    price: 0,
-    discountedPrice: 0,
+    title: "Rotary Joint for Water Application",
+    category: "Sealing & Fluid Handling",
+    subCategory: "Rotary Unions",
+    description: "Rotary unions for transferring water, air, hydraulic oil and thermic fluid into rotating drums, rolls and cylinders.",
+    specifications: [
+      { label: "Size", value: "3/8\" to 6.0\"" },
+      { label: "Pressure", value: "15 bar" },
+      { label: "Speed", value: "3500 rpm" }
+    ],
     imgs: img(9),
   },
   {
     id: 10,
-    title: "Impression Cylinder",
-    category: "Printing Unit",
-    description:
-      "Heavy-duty impression cylinder delivering uniform pressure for clean, consistent prints.",
-    reviews: 0,
-    price: 0,
-    discountedPrice: 0,
+    title: "Pump Spares",
+    category: "Sealing & Fluid Handling",
+    subCategory: "Pump Spares",
+    description: "Replacement wet-end and bearing-end components for centrifugal process pumps, manufactured to sample or drawing in cast iron, carbon steel, stainless and duplex grades.",
+    specifications: [
+      { label: "Components", value: "Impeller, Pump Shaft, Casing, Shaft Sleeve, Stuffing Box, Bearing Housing" },
+      { label: "Pump Ranges", value: "Centrifugal, End Suction, Split Case, Slurry, Gear, Vacuum, Submersible" }
+    ],
     imgs: img(10),
   },
   {
     id: 11,
-    title: "Rubber Roller",
-    category: "Printing Unit",
-    description:
-      "Industrial rubber roller sourced for durability under continuous print-run conditions.",
-    reviews: 0,
-    price: 0,
-    discountedPrice: 0,
+    title: "Rubber, Silicone & PTFE Products",
+    category: "Sealing & Fluid Handling",
+    subCategory: "Elastomers & Polymers",
+    description: "Moulded and extruded elastomer components for process, pharmaceutical and food plant.",
+    specifications: [
+      { label: "Products", value: "Gaskets, diaphragms, bellows, hoses, sheeting and machined PTFE" }
+    ],
     imgs: img(11),
   },
+
+  // DIVISION 03 - ELECTRICAL & POWER SYSTEMS
   {
     id: 12,
-    title: "Doctor Blade",
-    category: "Printing Unit",
-    description:
-      "Precision doctor blade for accurate ink metering and a cleaner anilox roller surface.",
-    reviews: 0,
-    price: 0,
-    discountedPrice: 0,
+    title: "Air Circuit Breaker (ACB)",
+    category: "Electrical & Power Systems",
+    subCategory: "Switchgear",
+    description: "Low-voltage protection and distribution — air circuit breakers through to final distribution boards, selected for the fault level and discrimination the installation actually requires.",
+    specifications: [
+      { label: "ACB frame sizes", value: "630 A to 6300 A, fixed and draw-out" }
+    ],
     imgs: img(12),
   },
   {
     id: 13,
-    title: "Ink Chamber",
-    category: "Printing Unit",
-    description:
-      "Enclosed ink chamber system for controlled, low-waste ink delivery to the anilox roller.",
-    reviews: 0,
-    price: 0,
-    discountedPrice: 0,
+    title: "LED High Bay — Round",
+    category: "Electrical & Power Systems",
+    subCategory: "Illumination",
+    description: "High-bay luminaires for plant and yard lighting, to complete the industrial installation.",
+    specifications: [
+      { label: "Type", value: "Industrial LED Lighting" }
+    ],
     imgs: img(13),
   },
   {
     id: 14,
-    title: "Ink Pump",
-    category: "Printing Unit",
-    description:
-      "Reliable ink circulation pump built for continuous industrial printing operations.",
-    reviews: 0,
-    price: 0,
-    discountedPrice: 0,
+    title: "Cu / Al Armoured Cable",
+    category: "Electrical & Power Systems",
+    subCategory: "Power Transmission",
+    description: "Armoured and unarmoured power cables, control and instrumentation cables, house wiring and communication cable, sized and specified to installation conditions.",
+    specifications: [
+      { label: "Conductor", value: "Electrolytic grade copper and aluminium" },
+      { label: "Power cable sizes", value: "1.5 to 630 sq mm, single and multicore" },
+      { label: "Voltage grades", value: "1100 V, 3.3 kV, 6.6 kV and 11 kV" }
+    ],
     imgs: img(14),
   },
   {
     id: 15,
-    title: "Ink Filter",
-    category: "Printing Unit",
-    description:
-      "Fine-mesh ink filter that keeps the ink circuit clean and print quality consistent.",
-    reviews: 0,
-    price: 0,
-    discountedPrice: 0,
+    title: "3 Phase Online UPS",
+    category: "Electrical & Power Systems",
+    subCategory: "Power Backup",
+    description: "Three-phase online UPS, servo voltage stabilizers, harmonic filters, static transfer switches, inverters and batteries for continuous and clean power.",
+    specifications: [
+      { label: "Types", value: "Compact, Modular" }
+    ],
     imgs: img(15),
   },
   {
     id: 16,
-    title: "Ink Tank",
-    category: "Printing Unit",
-    description:
-      "Sturdy ink storage tank designed for easy cleaning and quick colour changeovers.",
-    reviews: 0,
-    price: 0,
-    discountedPrice: 0,
+    title: "3 Phase Induction Motor",
+    category: "Electrical & Power Systems",
+    subCategory: "Pumps, Motors & Building Services",
+    description: "Pump sets and three-phase motors for utility duty, together with water heating, ventilation and comfort equipment for plant amenity and residential projects.",
+    specifications: [
+      { label: "Application", value: "Industrial & Utility Duty" }
+    ],
     imgs: img(16),
-  },
-  {
-    id: 17,
-    title: "Printing Plate (Photopolymer Plate)",
-    category: "Printing Unit",
-    description:
-      "High-resolution photopolymer printing plate for crisp graphics and long print runs.",
-    reviews: 0,
-    price: 0,
-    discountedPrice: 0,
-    imgs: img(17),
-  },
-
-  // --- Slotting / Creasing Section ---
-  {
-    id: 18,
-    title: "Slotting Blade",
-    category: "Slotting & Creasing",
-    description:
-      "Sharp, precision-ground slotting blade for clean, accurate box slots.",
-    reviews: 0,
-    price: 0,
-    discountedPrice: 0,
-    imgs: img(18),
-  },
-  {
-    id: 19,
-    title: "Slotting Shaft",
-    category: "Slotting & Creasing",
-    description:
-      "Precision-machined slotting shaft built to hold true alignment run after run.",
-    reviews: 0,
-    price: 0,
-    discountedPrice: 0,
-    imgs: img(19),
-  },
-  {
-    id: 20,
-    title: "Creasing Wheel",
-    category: "Slotting & Creasing",
-    description:
-      "Hardened creasing wheel for sharp, consistent fold lines on every box blank.",
-    reviews: 0,
-    price: 0,
-    discountedPrice: 0,
-    imgs: img(20),
-  },
-  {
-    id: 21,
-    title: "Scoring Wheel",
-    category: "Slotting & Creasing",
-    description:
-      "Durable scoring wheel engineered for clean, defect-free score lines.",
-    reviews: 0,
-    price: 0,
-    discountedPrice: 0,
-    imgs: img(21),
-  },
-  {
-    id: 22,
-    title: "Knife Holder",
-    category: "Slotting & Creasing",
-    description:
-      "Rigid knife holder assembly for secure blade mounting and precise cuts.",
-    reviews: 0,
-    price: 0,
-    discountedPrice: 0,
-    imgs: img(22),
-  },
-  {
-    id: 23,
-    title: "Slotting Motor",
-    category: "Slotting & Creasing",
-    description:
-      "Industrial-grade drive motor for the slotting/creasing section, built for continuous use.",
-    reviews: 0,
-    price: 0,
-    discountedPrice: 0,
-    imgs: img(23),
-  },
-
-  // --- Die Cutting Section ---
-  {
-    id: 24,
-    title: "Die Cylinder",
-    category: "Die Cutting",
-    description:
-      "Precision-balanced die cylinder for accurate, repeatable rotary die cutting.",
-    reviews: 0,
-    price: 0,
-    discountedPrice: 0,
-    imgs: img(24),
-  },
-  {
-    id: 25,
-    title: "Die Cutting Plate",
-    category: "Die Cutting",
-    description:
-      "Custom-fit die cutting plate designed for clean, burr-free cuts.",
-    reviews: 0,
-    price: 0,
-    discountedPrice: 0,
-    imgs: img(25),
-  },
-  {
-    id: 26,
-    title: "Rubber Pad / Anvil Cover",
-    category: "Die Cutting",
-    description:
-      "Long-life rubber anvil cover that protects the cylinder and keeps cuts sharp.",
-    reviews: 0,
-    price: 0,
-    discountedPrice: 0,
-    imgs: img(26),
-  },
-  {
-    id: 27,
-    title: "Cutting Knife",
-    category: "Die Cutting",
-    description:
-      "Precision-ground cutting knife for consistent, clean die-cut edges.",
-    reviews: 0,
-    price: 0,
-    discountedPrice: 0,
-    imgs: img(27),
-  },
-  {
-    id: 28,
-    title: "Die Lock System",
-    category: "Die Cutting",
-    description:
-      "Secure die lock mechanism for fast, accurate die changeovers.",
-    reviews: 0,
-    price: 0,
-    discountedPrice: 0,
-    imgs: img(28),
-  },
-
-  // --- Stacker Section ---
-  {
-    id: 29,
-    title: "Stacker Conveyor Belt",
-    category: "Stacker Section",
-    description:
-      "Heavy-duty conveyor belt for smooth, reliable movement of finished sheets to the stacker.",
-    reviews: 0,
-    price: 0,
-    discountedPrice: 0,
-    imgs: img(29),
-  },
-  {
-    id: 30,
-    title: "Lifting Table",
-    category: "Stacker Section",
-    description:
-      "Robust lifting table built for consistent stack height control and easy unloading.",
-    reviews: 0,
-    price: 0,
-    discountedPrice: 0,
-    imgs: img(30),
-  },
-  {
-    id: 31,
-    title: "Pneumatic Stopper",
-    category: "Stacker Section",
-    description:
-      "Reliable pneumatic stopper for precise sheet alignment at the stacker section.",
-    reviews: 0,
-    price: 0,
-    discountedPrice: 0,
-    imgs: img(31),
-  },
-  {
-    id: 32,
-    title: "Stacker Motor",
-    category: "Stacker Section",
-    description:
-      "Industrial drive motor for the stacker unit, built for long, trouble-free service life.",
-    reviews: 0,
-    price: 0,
-    discountedPrice: 0,
-    imgs: img(32),
-  },
-  {
-    id: 33,
-    title: "Photo Sensor",
-    category: "Stacker Section",
-    description:
-      "High-accuracy photo sensor for reliable sheet detection and stack counting.",
-    reviews: 0,
-    price: 0,
-    discountedPrice: 0,
-    imgs: img(33),
-  },
+  }
 ];
 
 export default shopData;

@@ -12,7 +12,7 @@ export const whatsappLink = (message: string) =>
   `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
 
 export const enquiryMessage = (productTitle: string) =>
-  `Hi, I'm interested in the ${productTitle}. Could you please share the price, availability and delivery details?`;
+  `Hi, I'm interested in the ${productTitle}. Could you please share more details, availability, and delivery information?`;
 
 export const mailtoLink = (subject: string, body: string) =>
   `mailto:${EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;

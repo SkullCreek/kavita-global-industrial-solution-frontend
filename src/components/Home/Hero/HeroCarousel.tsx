@@ -39,27 +39,27 @@ const HeroCarousal = () => {
 
             <h1 className="font-semibold text-dark text-xl sm:text-3xl mb-3">
               <a href="/shop-without-sidebar">
-                Flexo Printing Machine Spare Parts
+                Industrial Trading & Engineering Services
               </a>
             </h1>
 
             <p>
-              Feeding, printing, slotting, die-cutting & stacker section parts
-              — trusted trading &amp; service support for your machines.
+              Machinery, sealing, fluid handling, and electrical power systems
+              — your one-stop supplier for industrial components.
             </p>
 
             <a
               href="/shop-without-sidebar"
               className="inline-flex font-medium text-white text-custom-sm rounded-md bg-dark py-3 px-9 ease-out duration-200 hover:bg-blue mt-10"
             >
-              Browse Parts
+              Browse Catalogue
             </a>
           </div>
 
           <div>
             <Image
               src="/images/hero/hero-01.png"
-              alt="flexo printing machine spare parts"
+              alt="industrial machinery and spares"
               width={351}
               height={358}
             />
@@ -86,8 +86,8 @@ const HeroCarousal = () => {
             </h1>
 
             <p>
-              Get quick assistance and genuine spare parts for your Flexo
-              printing machines — just a WhatsApp message away.
+              Get quick assistance and genuine spare parts for your industrial plants
+              — just a WhatsApp message away.
             </p>
 
             <a

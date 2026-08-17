@@ -70,10 +70,10 @@ const Categories = () => {
                     </clipPath>
                   </defs>
                 </svg>
-                Machine Sections
+                Industrial Divisions
               </span>
               <h2 className="font-semibold text-xl xl:text-heading-5 text-dark">
-                Shop Spare Parts by Section
+                Explore Our Range
               </h2>
             </div>
 
