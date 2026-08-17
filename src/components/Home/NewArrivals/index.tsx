@@ -34,7 +34,7 @@ const NewArrival = () => {
               Full Catalog
             </span>
             <h2 className="font-semibold text-xl xl:text-heading-5 text-dark">
-              Explore All Spare Parts
+              Explore the Full Catalogue
             </h2>
           </div>
 

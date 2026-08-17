@@ -112,7 +112,7 @@ const Contact = () => {
 
                   <a
                     href={whatsappLink(
-                      "Hi, I'd like to enquire about your Flexo printing machine spare parts."
+                      "Hi, I'd like to enquire about your machinery, sealing, electrical or spares range."
                     )}
                     target="_blank"
                     rel="noopener noreferrer"

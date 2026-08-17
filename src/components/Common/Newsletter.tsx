@@ -32,7 +32,7 @@ const Newsletter = () => {
               <div className="flex flex-col sm:flex-row gap-4">
                 <a
                   href={whatsappLink(
-                    "Hi, I'm looking for a spare part for my Flexo printing machine that I couldn't find listed. Can you help?"
+                    "Hi, I'm looking for a product or spare part that I couldn't find listed on your site. Can you help?"
                   )}
                   target="_blank"
                   rel="noopener noreferrer"

@@ -58,10 +58,11 @@ const HeroCarousal = () => {
 
           <div>
             <Image
-              src="/images/hero/hero-01.png"
+              src="/images/catalogue/corrugated-cardboard-production-line-1-1.jpeg"
               alt="industrial machinery and spares"
               width={351}
-              height={358}
+              height={351}
+              className="object-contain"
             />
           </div>
         </div>
@@ -100,10 +101,11 @@ const HeroCarousal = () => {
 
           <div>
             <Image
-              src="/images/hero/hero-01.png"
+              src="/images/catalogue/automatic-high-speed-printing-slotting-d-15-1.jpeg"
               alt="industrial equipment trading and services"
               width={351}
-              height={358}
+              height={351}
+              className="object-contain"
             />
           </div>
         </div>

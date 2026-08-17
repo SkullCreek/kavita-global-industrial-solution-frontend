@@ -46,10 +46,11 @@ const Hero = () => {
 
                   <div>
                     <Image
-                      src="/images/hero/hero-02.png"
+                      src="/images/catalogue/dual-cartridge-seal-37-1.jpeg"
                       alt="sealing and fluid handling"
                       width={123}
-                      height={161}
+                      height={123}
+                      className="object-contain"
                     />
                   </div>
                 </div>
@@ -75,10 +76,11 @@ const Hero = () => {
 
                   <div>
                     <Image
-                      src="/images/hero/hero-01.png"
-                      alt="feeding section parts"
+                      src="/images/catalogue/protection-devices-distribution-51-2.jpeg"
+                      alt="electrical and power systems"
                       width={123}
-                      height={161}
+                      height={123}
+                      className="object-contain"
                     />
                   </div>
                 </div>

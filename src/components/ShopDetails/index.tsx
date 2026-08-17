@@ -176,7 +176,7 @@ const ShopDetails = () => {
 
                   <p className="mb-4.5">
                     {product.description ||
-                      "Genuine spare part sourced for reliable, long-lasting performance on your Flexo printing machine."}
+                      "Genuine equipment and spares sourced for reliable, long-lasting performance on your production line."}
                   </p>
 
                   <ul className="flex flex-col gap-2">
@@ -364,7 +364,7 @@ const ShopDetails = () => {
 
                     <p className="mb-6">
                       {product.description ||
-                        "This part is sourced to match OEM fit, form and function for Flexo printing machines, keeping your line running with minimal downtime."}
+                        "This item is sourced to match fit, form and function for your machinery, keeping your line running with minimal downtime."}
                     </p>
 
                     {product.specifications && product.specifications.length > 0 ? (
@@ -387,8 +387,8 @@ const ShopDetails = () => {
                       <p>
                         Exact specifications (dimensions, material grade,
                         compatible machine models) are confirmed at the time of
-                        enquiry, since Flexo machines vary by manufacturer and
-                        model. Share your machine details on WhatsApp or by
+                        enquiry, since requirements vary by plant and
+                        application. Share your details on WhatsApp or by
                         phone and we'll confirm the right fit before
                         dispatch.
                       </p>
@@ -401,8 +401,8 @@ const ShopDetails = () => {
                     </h2>
 
                     <p className="mb-6">
-                      Send us the machine make/model along with the part name
-                      and quantity required — we&apos;ll confirm availability,
+                      Send us the machine make/model or part name along with
+                      the quantity required — we&apos;ll confirm availability,
                       price and expected delivery time.
                     </p>
                     <p>
@@ -442,8 +442,9 @@ const ShopDetails = () => {
                     </div>
                     <div className="w-full">
                       <p className="text-sm sm:text-base text-dark">
-                        Trading &amp; services for Flexo printing machine
-                        spare parts
+                        Trading &amp; engineering services across packaging
+                        machinery, sealing &amp; fluid handling, and
+                        electrical &amp; power systems
                       </p>
                     </div>
                   </div>

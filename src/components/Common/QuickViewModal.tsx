@@ -184,7 +184,7 @@ const QuickViewModal = () => {
 
               <p>
                 {product.description ||
-                  "Genuine spare part sourced for reliable, long-lasting performance on your Flexo printing machine."}
+                  "Genuine equipment and spares sourced for reliable, long-lasting performance on your production line."}
               </p>
 
               <div className="flex flex-wrap justify-between gap-5 mt-6 mb-7.5">
