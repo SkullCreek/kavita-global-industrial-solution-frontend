@@ -2,8 +2,9 @@ import Home from "@/components/Home";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "NextCommerce | Nextjs E-commerce template",
-  description: "This is Home for NextCommerce Template",
+  title: "Kavita Global Industrial Solution | Trading and Services",
+  description:
+    "Kavita Global Industrial Solution supplies corrugation & packaging machinery, mechanical seals & fluid handling equipment, and electrical & power systems to manufacturing plants across India. Enquire on WhatsApp for pricing and availability.",
   // other metadata
 };
 

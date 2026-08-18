@@ -1,13 +1,12 @@
 export type Product = {
   title: string;
   category?: string;
+  subCategory?: string;
   description?: string;
-  reviews: number;
-  price: number;
-  discountedPrice: number;
   id: number;
   imgs?: {
     thumbnails: string[];
     previews: string[];
   };
+  specifications?: { label: string; value: string }[];
 };

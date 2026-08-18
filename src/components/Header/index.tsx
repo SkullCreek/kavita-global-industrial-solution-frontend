@@ -27,11 +27,9 @@ const Header = () => {
 
   const options = [
     { label: "All Categories", value: "0" },
-    { label: "Feeding Section", value: "1" },
-    { label: "Printing Unit", value: "2" },
-    { label: "Slotting & Creasing", value: "3" },
-    { label: "Die Cutting", value: "4" },
-    { label: "Stacker Section", value: "5" },
+    { label: "Packaging & Corrugation Machinery", value: "1" },
+    { label: "Sealing & Fluid Handling", value: "2" },
+    { label: "Electrical & Power Systems", value: "3" },
   ];
 
   return (
@@ -72,7 +70,7 @@ const Header = () => {
                       type="search"
                       name="search"
                       id="search"
-                      placeholder="Search spare parts..."
+                      placeholder="Search products..."
                       autoComplete="off"
                       className="custom-search w-full rounded-r-[5px] bg-gray-1 !border-l-0 border border-gray-3 py-2.5 pl-4 pr-10 outline-none ease-in duration-200"
                     />
@@ -150,7 +148,7 @@ const Header = () => {
               <div className="flex items-center gap-3">
                 <a
                   href={whatsappLink(
-                    "Hi, I'd like to enquire about your Flexo printing machine spare parts."
+                    "Hi, I'd like to enquire about your machinery, sealing, electrical or spares range."
                   )}
                   target="_blank"
                   rel="noopener noreferrer"

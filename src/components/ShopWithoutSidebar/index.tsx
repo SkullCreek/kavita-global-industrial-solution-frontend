@@ -1,5 +1,7 @@
 "use client";
 import React, { useState } from "react";
+import { useSearchParams } from "next/navigation";
+import Link from "next/link";
 import Breadcrumb from "../Common/Breadcrumb";
 
 import SingleGridItem from "../Shop/SingleGridItem";
@@ -10,6 +12,12 @@ import shopData from "../Shop/shopData";
 
 const ShopWithoutSidebar = () => {
   const [productStyle, setProductStyle] = useState("grid");
+  const searchParams = useSearchParams();
+  const categoryFilter = searchParams.get("category");
+
+  const filteredData = categoryFilter
+    ? shopData.filter((item) => item.category === categoryFilter)
+    : shopData;
 
   const options = [
     { label: "Latest Products", value: "0" },
@@ -20,7 +28,7 @@ const ShopWithoutSidebar = () => {
   return (
     <>
       <Breadcrumb
-        title={"Flexo Printing Machine Spare Parts"}
+        title={categoryFilter || "Product Catalogue"}
         pages={["products"]}
       />
       <section className="overflow-hidden relative pb-20 pt-5 lg:pt-20 xl:pt-28 bg-[#f3f4f6]">
@@ -36,9 +44,19 @@ const ShopWithoutSidebar = () => {
 
                     <p>
                       Showing{" "}
-                      <span className="text-dark">{shopData.length}</span>{" "}
-                      parts
+                      <span className="text-dark">{filteredData.length}</span>{" "}
+                      products
+                      {categoryFilter && <> in {categoryFilter}</>}
                     </p>
+
+                    {categoryFilter && (
+                      <Link
+                        href="/shop-without-sidebar"
+                        className="inline-flex items-center gap-1.5 text-custom-sm font-medium text-blue hover:text-blue-dark"
+                      >
+                        Clear filter ✕
+                      </Link>
+                    )}
                   </div>
 
                   {/* <!-- top bar right --> */}
@@ -130,7 +148,7 @@ const ShopWithoutSidebar = () => {
                     : "flex flex-col gap-7.5"
                 }`}
               >
-                {shopData.map((item, key) =>
+                {filteredData.map((item, key) =>
                   productStyle === "grid" ? (
                     <SingleGridItem item={item} key={key} />
                   ) : (
@@ -139,6 +157,12 @@ const ShopWithoutSidebar = () => {
                 )}
               </div>
               {/* <!-- Products Grid Tab Content End --> */}
+
+              {filteredData.length === 0 && (
+                <p className="text-center py-10 text-dark-4">
+                  No products found in this category yet.
+                </p>
+              )}
             </div>
             {/* // <!-- Content End --> */}
           </div>

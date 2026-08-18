@@ -268,7 +268,7 @@ const Footer = () => {
                 <a
                   className="inline-flex items-center gap-3 py-[9px] px-7.5 text-white rounded-md bg-blue ease-out duration-200 hover:bg-blue-dark"
                   href={whatsappLink(
-                    "Hi, I'd like to enquire about your Flexo printing machine spare parts."
+                    "Hi, I'd like to enquire about your machinery, sealing, electrical or spares range."
                   )}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -300,7 +300,7 @@ const Footer = () => {
             </p>
 
             <p className="font-medium text-dark-4">
-              Trading &amp; Services for Flexo Printing Machine Spare Parts
+              Industrial Trading &amp; Engineering Services
             </p>
           </div>
         </div>
