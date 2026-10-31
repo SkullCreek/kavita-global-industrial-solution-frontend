@@ -12,6 +12,8 @@ const config: Config = {
   theme: {
     fontFamily: {
       "euclid-circular-a": ["Euclid Circular A"],
+      display: ['"Archivo Variable"', "Archivo", "system-ui", "sans-serif"],
+      body: ['"IBM Plex Sans"', "system-ui", "sans-serif"],
     },
     container: {
       center: true,
@@ -104,6 +106,22 @@ const config: Config = {
       ...defaultTheme.screens,
     },
     extend: {
+      colors: {
+        kg: {
+          ink: "#0F1B2D",
+          "ink-2": "#1B2A40",
+          steel: "#E6EAF0",
+          paper: "#F5F6F8",
+          line: "#D5DBE3",
+          muted: "#5B6778",
+          blue: "#1E3FAE",
+          "blue-dark": "#162F85",
+          red: "#B4231F",
+          gold: "#D9A928",
+          wa: "#1E8E4E",
+          "wa-dark": "#16733E",
+        },
+      },
       fontSize: {
         "2xs": ["10px", "17px"],
         "heading-1": ["60px", "72px"],

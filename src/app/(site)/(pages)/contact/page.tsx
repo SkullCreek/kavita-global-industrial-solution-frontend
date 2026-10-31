@@ -2,7 +2,7 @@ import Contact from "@/components/Contact";
 
 import { Metadata } from "next";
 export const metadata: Metadata = {
-  title: "Contact Us | Kavita Global Industrial Solution",
+  title: "Contact",
   description:
     "Get in touch with Kavita Global Industrial Solution for machinery, sealing & fluid handling, and electrical & power systems enquiries. Call, WhatsApp or email us.",
   // other metadata
@@ -10,9 +10,7 @@ export const metadata: Metadata = {
 
 const ContactPage = () => {
   return (
-    <main>
-      <Contact />
-    </main>
+    <Contact />
   );
 };
 
