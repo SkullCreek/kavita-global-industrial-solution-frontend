@@ -1,19 +1,13 @@
-import React from "react";
-import ShopDetails from "@/components/ShopDetails";
-import { Metadata } from "next";
+import { redirect } from "next/navigation";
+import { getProduct, catalogueHref } from "@/lib/catalogue";
 
-export const metadata: Metadata = {
-  title: "Product Details | Kavita Global Industrial Solution",
-  description: "Product details and specifications from the Kavita Global Industrial Solution catalogue.",
-  // other metadata
-};
-
-const ShopDetailsPage = () => {
-  return (
-    <main>
-      <ShopDetails />
-    </main>
-  );
-};
-
-export default ShopDetailsPage;
+// Old product URL (/shop-details?id=N). Product pages now live at /products/N.
+export default async function ShopDetailsRedirect({
+  searchParams,
+}: {
+  searchParams: Promise<{ id?: string }>;
+}) {
+  const { id } = await searchParams;
+  const p = id ? getProduct(Number(id)) : undefined;
+  redirect(p ? `/products/${p.id}` : catalogueHref());
+}
